@@ -1,0 +1,282 @@
+h1 {
+    font-size: 2.35em;
+  }
+  
+  h2 {
+    font-size: 1.2em;
+  }
+  h3
+  {
+    font-size: 1.8em;
+  }
+  
+  hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, transparent, rgb(0, 0, 0), transparent);
+  }
+
+  header {
+    margin-top: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #C9D6DF;
+    border-radius: 10px;
+    width: 100%;
+    display: inline-block;
+  }
+
+  header h2 {
+    padding-top: 15px;
+    padding-bottom: 25px;
+  }
+
+  footer {
+    margin-top: 10px;
+    background-color: #C9D6DF;
+    
+    text-shadow: 0.3px 0.3px 1.3px #52616B;
+    width: 100%;
+    display: inline-block;
+  }
+
+  
+  img {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    width: 30%;
+    height:30%;
+    border-radius: 8px;
+  }
+
+  p {
+    padding: 30px;
+    margin: 30px;
+  }
+
+  body {
+    scroll-behavior: smooth;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1024px;
+    width: 95%;
+    background-color: #F0F5F9;
+    color: #1E2022;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  }
+
+  #back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50%;
+    width: 60px;
+    height: 62px;
+    cursor: pointer;
+    text-align: center;
+    background-image: url("/up-chevron.png");
+    background-size: 100%;
+  }
+
+  button {
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    width: 150px;
+    margin: 5px;
+  }
+
+  button:active {
+    color:rgba(0, 0, 0, 0.2);
+  }
+
+  button:hover {
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+    opacity: 0.9;
+    transform: scale(1.05);
+  }
+
+#toggle-button {
+  display: inline-block;
+}
+
+  a {
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  form {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 25px;
+  }
+  
+  label {
+   
+    margin-bottom: 2px;
+    width: 100%;
+    
+  }
+  
+
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  .text-box
+  textarea {
+    width: 60%;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    border-color: #C9D6DF;
+  }
+
+  input:focus {
+    outline: 2px solid #F0F5F9;
+  }
+  
+  .radio-buttons, .text-box {
+    display: flex;
+    justify-content: center; 
+  }
+
+  .radio-buttons input[type="radio"],
+.radio-buttons label {
+  display: inline-flex;
+  align-items: center;
+}
+
+
+.infographic {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  padding: 15px;
+  padding-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+}
+@media (max-width: 768px) {
+  .infographic {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info, .honesty {
+    text-align: center;
+  }
+  .info {
+    padding-top: 30px;
+  }
+  .card {
+    flex-direction: row;
+  }
+}
+.infographic h2 {
+  margin-top: 0;
+}
+
+.info,
+.honesty {
+  width: 50%;
+  flex-basis: 45%;
+  max-width: 45%;
+  text-align: left;
+}
+
+.infographic p {
+  padding: 0;
+  padding-bottom: 10px;
+  margin: 0;
+}
+
+th {
+  padding-right: 70px;
+  padding-bottom: 10px;
+}
+
+td {
+  padding-bottom: 10px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 5px;
+  background-size: 10%;
+  align-items: center;
+  margin: 4px;
+  flex: 1 1 300px;
+  width: 94.2%;
+  transition: height 0.6s ease-out;
+  height: 210px;
+  text-align: center;
+  overflow: hidden;
+  padding-bottom: 10px;
+}
+
+.logos {
+  width: 420px;
+  height: 80px;
+  margin: 10px 0;
+  margin-bottom: 30px;
+}
+
+.card h2, .card h4, .card h5 {
+  padding-bottom: 10px;
+  margin: 0;
+}
+
+.card h4 {
+  padding-top: 25px;
+}
+
+.card:hover {
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+  transform: scale(0.98);
+}
+
+.card a:hover {
+  background-color: #E3FDFD;
+}
+
+.more-info {
+  text-align: left;
+  padding-top: 10px;
+  margin-left: 0;
+  width: 90%;
+}
+
+ul {
+  text-align: left;
+  margin-left: 0;
+  padding-left: 20px;
+}
+
+

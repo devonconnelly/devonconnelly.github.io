@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Devon Connelly</title>
+</head>
+<body>
+  <button id="back-to-top" style="display: none;">
+  </button>
+      <header>
+      <img src="/myphoto.png" alt="Me">
+    <h1>Devon Connelly</h1>
+    <h2>Software Developer</h2>
+    <a href="/Devon_Connelly_Resume copy.pdf" target ="_blank" download="Devon_Connelly_Resume.pdf">
+        <button id = "resume-button" >Resume</button>
+    </a>
+    <a href="#contact-me">
+    <button id = "contact-button">Contact Me</button>
+    </a>
+  </header>
+<section class="infographic">
+  <div class="honesty">
+    <h2>Honesty Statement</h2>
+    <p>I declare that my assessment is wholly my own work in accordance with Seneca Academic Policy. No part of this assessment has been copied manually or electronically from any other source (including web sites) except for the informa@on supplied by the WEB222 instructors and / or made available in this assessment for my use. I also declare that no part of this assignment has been distributed to other students.</p>
+    <p style="padding-top: 8px;">Date: Apr 18, 2023</p>
+  </div>
+  <div class="info">
+    <h2>Basic Info</h2>
+    <table>
+      <tr>
+      <th>Name:</th>
+      <td>Devon Connelly</td>
+      </tr>
+      <tr>
+      <th>Email:</th>
+      <td>dconnelly@myseneca.ca</td>
+      </tr>
+      <tr>
+      <th>Language:</th>
+      <td>English, French</td>
+      </tr>
+      <tr>
+      <th>Student No:</th>
+      <td>105322218</td>
+      </tr>
+      <tr>
+        <th>Class Section:</th>
+        <td>NAA</td>
+        </tr>
+      <tr>
+      <th>Instructor:</th>
+      <td>Mark Meritt</td>
+      </tr>
+      </table>
+  </div>
+</section>
+<div id="about-me">
+  <hr>
+  <h3>About Me</h3>
+  <div class="About-Me">
+    <p>I am currently a student and an aspiring software developer pursuing an advanced diploma, majoring in Computer Programming and Analysis at Seneca College.</p>
+    <hr>
+  </div>
+</div>
+<section class="Academic-Background">
+<h3>Academic Background</h3>
+<div class="card-container">
+  <div class="card" id="seneca-card">
+    <img  class="logos" src="/seneca-logo.png" alt="Seneca_logo">
+    <h2>Advanced Diploma</h2>
+    <button class="toggle-button" onclick="toggle('seneca-card')">More</button>
+    <h4>Computer Programming and Analysis</h4>
+    <h5>2022-2025 (Expected)</h5>
+    <div class="more-info">
+      <h4>Skills Learned</h4>
+      <ul>
+        <li>C++ Programming</li>
+        <li>C Programming</li>
+        <li>HTML/CSS/Javascript</li>
+        <li>Version Control (Git)</li>
+        <li>Database Management (SQL)</li>
+</ul>
+    </div>
+  </div>
+  <div class="card" id="trent-card">
+    <img class="logos" src="/trent-logo.png" alt="Trent_logo">
+    <h2>Bachelor's Degree</h2>
+    <button class="toggle-button" onclick="toggle('trent-card')">More</button>
+    <h4>Software Engineering</h4>
+    <h5>2021-2022</h5>
+    <div class="more-info">
+      <h4>Skills Learned</h4>
+      <ul>
+        <li>C# Programming</li>
+        <li>Data Stuctures</li>
+        <li>Algorithms</li>
+        <li>Algebra</li>
+        <li>Calculus</li>
+</ul></div>
+  </div>
+</div>
+</section>
+  <footer>
+    <h3 id = "contact-me">Contact Me</h3>
+    <form id="contact-form" method="post" action="https://hCpbin.org/post">
+        <div>
+          <input type="text" id="name" name="name" placeholder="Name" required>
+        </div>
+        <div>
+          <input type="email" id="email" name="email" placeholder="Email Address" required>
+        </div>
+        <div>
+          <input type="text" id="address" name="address" placeholder="Address" required>
+        </div>
+        <div>
+          <input type="text" id="city" name="city" list="cities" placeholder= "City" required>
+          <datalist id="cities">
+            <option value="Toronto">
+            <option value="Montreal">
+            <option value="Vancouver">
+            <option value="Kingston">
+            <option value="Ottawa">
+          </datalist>
+        </div>
+        <div>
+          <input type="text" id="postal-code" name="postal-code" pattern="[a-zA-Z]\d[a-zA-Z] \d[a-zA-Z]\d" placeholder="Postal Code" required>
+        </div>
+        <label>What is this about?</label>
+        <table class="radio-buttons">
+          <tr>
+            <td><label for="question">Question</label></td>
+            <td><input type="radio" id="question" name="subject" value="Question" required></td>
+          </tr>
+          <tr>
+            <td><label for="comment">Comment</label></td>
+            <td><input type="radio" id="comment" name="subject" value="Comment" required></td>
+          </tr>
+          <tr>
+            <td><label for="hiring">Hiring</label></td>
+            <td><input type="radio" id="hiring" name="subject" value="Hiring" required></td>
+          </tr>
+        </table>
+        
+        <div id="hourly-rate" style="display:none">
+          <input type="number" id="rate" name="rate" min="0" step="0.01" placeholder= "Hourly Rate" equired>
+        </div>
+        <div class="text-box">
+          <textarea id="message" name="message" rows="5"  placeholder="Message" equired></textarea>
+        </div>
+        <div>
+          <input type="text" id="other-input" name="other-input" placeholder="Other Inquiries">
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
