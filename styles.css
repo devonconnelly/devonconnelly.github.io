@@ -204,7 +204,6 @@ table {
 .card-container {
   display: inline-block !important;
   width: 100%;
-  margin-left: 10px;
 }
 
 .card-container .card {
@@ -218,6 +217,9 @@ th {
 td {
   font-size: 15px !important;
 }
+.card img {
+  width: 75%;
+};
 }
 
 .infographic h2 {
