@@ -41,13 +41,17 @@ footer {
 }
 
 #about-me {
-  margin-top: 5px;
+  margin-top: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
   background-color: #C9D6DF;
   border-radius: 10px;
 }
 
+.Academic-Background {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 img {
   margin-top: 10px;
   margin-bottom: 5px;
@@ -127,7 +131,8 @@ form {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding-bottom: 25px;
+  padding-bottom: 20px;
+  
 }
 
 label {
@@ -181,6 +186,13 @@ padding-top: 30px;
 margin-left: auto;
 margin-right: auto;
 width: 95%;
+}
+
+@media (max-width: 420px) {
+  .card h4 {
+    padding-top: 60px !important;
+    padding-bottom: 0 !important;
+    }
 }
 @media (max-width: 768px) {
   .infographic {
